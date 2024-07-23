@@ -11,6 +11,11 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -21,7 +26,11 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "output": "server",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
